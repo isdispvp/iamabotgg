@@ -3,7 +3,7 @@ const fs = require('fs');
 let rawdata = fs.readFileSync('config.json');
 let data = JSON.parse(rawdata);
 var lasttime = -1;
-var moving = 0;
+var moving = 1;
 var connected = 0;
 var actions = [ 'forward', 'back', 'left', 'right']
 var lastaction;
